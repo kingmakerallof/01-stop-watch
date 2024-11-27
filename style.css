@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url(digital-7.ttf);
+}
+
+body {
+    background-color: #485460;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    margin-bottom: 25PX;
+    color: aliceblue; 
+}
+
+.box {
+    background-color: #ecf0f1;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+}
+
+.frame {
+    display: flex;
+    gap: 3px;
+}
+
+.hrs,
+.min,
+.sec,
+.ms,
+.colon {
+    width: 50px;
+    height: 50px;
+    font-size: 55px;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'digital-7';
+}
+
+.colon {
+    width: 10px;
+    height: 50px;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons button {
+    border: none;
+    padding: 7px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.start {
+    background-color: #2bcbba;
+}
+
+.stop {
+    background-color: #fc5c65;
+}
+
+.reset {
+    background-color: #ffb142;
+}
+
+.start-active,
+.stop-active {
+    pointer-events: none;
+    opacity: 0.5;
+}
